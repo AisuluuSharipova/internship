@@ -1,9 +1,6 @@
 ﻿<!DOCTYPE html>
-
 <html>
-
 <head lang="en">
-
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Courses | CS AIU</title>
@@ -12,368 +9,674 @@
     <link rel="stylesheet" type="text/css" href="../css/text.css" />
     <link rel="stylesheet" type="text/css" href="../css/960.css" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
-
+    
+    <style>
+        .course-category {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+        .course-list {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+        }
+        .course-item {
+            margin-bottom: 10px;
+            break-inside: avoid;
+        }
+        .course-description {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .teacher-info {
+            font-style: italic;
+            color: #666;
+            margin-top: 5px;
+        }
+        .quick-nav {
+            background: #2c3e50;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .quick-nav a {
+            color: #ecf0f1;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .quick-nav a:hover {
+            color: #3498db;
+        }
+    </style>
 </head>
 
 <body>
-
     <div id="container">
-
         <!-- HEADER -->
         <div id="header-wrap">
-        <div id="header" class="container_16">
-            <div id="logo" class="grid_5">
-                <img alt="Computer Science Department" src="../images/logo.png" />
-            </div>
+            <div id="header" class="container_16">
+                <div id="logo" class="grid_5">
+                    <img alt="Computer Science Department" src="../images/logo.png" />
+                </div>
 
-            <!--Navigation-->
-            <div id="nav" class="grid_11">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li>
-                        <a href="javascript:void(0)">Department</a>
-                        <ul id="department">
-                            <li><a href="../department/news.html">News</a></li>
-                            <li><a href="../department/developments.html">Developments</a></li>
-                            <li><a href="http://ic.iaau.edu.kg" target="_blank">Exchange Programs</a></li>
-                            <li><a href="../department/prospective-students.html">Prospective Students</a></li>
-                            <li><a href="../department/alumni.html">Alumni</a></li>
-                            <li><a href="../department/contact-us.html" >Contact Us</a></li>
-                            <li><a href="../department/info.html" >Info</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">Bachelor Program</a>
-                        <ul id="program">
-                            <li><a href="../program/courses.html">Courses</a></li>
-                            <li><a href="../program/research.html">Research</a></li>
-                            <li><a href="../program/degree-guide.html">Degree Guide</a></li>
-                            <li><a href="../program/recent-diplomas.html">Recent Diplomas</a></li>
-                            <li><a href="../program/exam_rules.html">Exam Rules</a></li>
-                            <li><a href="../program/admission.html">Admission</a></li>
-                            <li><a href="../program/faq.html">FAQ</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">Master Degree</a>
-                        <ul id="master">
-                            <li><a href="../grad/overview.html">Overview</a></li>
-                            <li><a href="../grad/grad-courses.html">Program</a></li>
-                            <li><a href="../grad/graduate-research.html">Graduate Research</a></li>
-                            <li><a href="../grad/grad-admission.html">Admission</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)" >Calendar</a>
-                        <ul id="calendar">
-                            <li><a href="http://iaau.edu.kg/view/public/pages/page.xhtml;jsessionid=TCIdhbOa1D1eOGAldtBq-N1i_kOX5KHgKE593l4n.sites?id=281" target="_blank">Academic Calendar</a></li>
-                            <li><a href="../calendar/schedule-of-lectures.html">Schedule of Lectures</a></li>
-                            <li><a href="../calendar/midterms.html">Midterms Schedule</a></li>
-                            <li><a href="../calendar/finals.html">Finals Schedule</a></li>
-                            <li><a href="../calendar/labs.html">Labs Schedule</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../faculty/faculty.html">Faculty</a>
-                    </li>
-                    <li>
-                        <a href="../labs/labs.html">Labs</a>
-                        <ul id="labs">
-                            <li><a href="http://its.iaau.edu.kg" target="_blank">Policy &amp;
-                                Regulations</a></li>
-                            <li><a href="../labs/software.html">Software</a></li>
-                            <li><a href="../department/contact-us.html">Contacts</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <!-- Navigation -->
+                <div id="nav" class="grid_11">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li>
+                            <a href="javascript:void(0)">Department</a>
+                            <ul id="department">
+                                <li><a href="../department/news.html">News</a></li>
+                                <li><a href="../department/developments.html">Developments</a></li>
+                                <li><a href="http://ic.iaau.edu.kg" target="_blank">Exchange Programs</a></li>
+                                <li><a href="../department/prospective-students.html">Prospective Students</a></li>
+                                <li><a href="../department/alumni.html">Alumni</a></li>
+                                <li><a href="../department/contact-us.html">Contact Us</a></li>
+                                <li><a href="../department/info.html">Info</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Bachelor Program</a>
+                            <ul id="program">
+                                <li><a href="../program/courses.html">Courses</a></li>
+                                <li><a href="../program/research.html">Research</a></li>
+                                <li><a href="../program/degree-guide.html">Degree Guide</a></li>
+                                <li><a href="../program/recent-diplomas.html">Recent Diplomas</a></li>
+                                <li><a href="../program/exam_rules.html">Exam Rules</a></li>
+                                <li><a href="../program/admission.html">Admission</a></li>
+                                <li><a href="../program/faq.html">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Master Degree</a>
+                            <ul id="master">
+                                <li><a href="../grad/overview.html">Overview</a></li>
+                                <li><a href="../grad/grad-courses.html">Program</a></li>
+                                <li><a href="../grad/graduate-research.html">Graduate Research</a></li>
+                                <li><a href="../grad/grad-admission.html">Admission</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Calendar</a>
+                            <ul id="calendar">
+                                <li><a href="http://iaau.edu.kg/view/public/pages/page.xhtml;jsessionid=TCIdhbOa1D1eOGAldtBq-N1i_kOX5KHgKE593l4n.sites?id=281" target="_blank">Academic Calendar</a></li>
+                                <li><a href="../calendar/schedule-of-lectures.html">Schedule of Lectures</a></li>
+                                <li><a href="../calendar/midterms.html">Midterms Schedule</a></li>
+                                <li><a href="../calendar/finals.html">Finals Schedule</a></li>
+                                <li><a href="../calendar/labs.html">Labs Schedule</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../faculty/faculty.html">Faculty</a>
+                        </li>
+                        <li>
+                            <a href="../labs/labs.html">Labs</a>
+                            <ul id="labs">
+                                <li><a href="http://its.iaau.edu.kg" target="_blank">Policy &amp; Regulations</a></li>
+                                <li><a href="../labs/software.html">Software</a></li>
+                                <li><a href="../department/contact-us.html">Contacts</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
 
         <!-- CONTENT -->
         <div id="wrap-content">
+            <div id="content" class="container_16">
+                <div id="content-shadow"></div>
+                <h1 style="text-align:center">CS Undergraduate Curriculum</h1>
+                
+                <!-- Quick Navigation -->
+                <div class="quick-nav" style="text-align: center;">
+                    <a href="#first-year">First Year</a> | 
+                    <a href="#second-year">Second Year</a> | 
+                    <a href="#third-year">Third Year</a> | 
+                    <a href="#fourth-year">Fourth Year</a> | 
+                    <a href="#general-courses">General Courses</a>
+                </div>
 
-        <div id="content" class="container_16">
-            <div id="content-shadow"></div>
-            <h1 style="text-align:center">CS Undergraduate Curriculum</h1>
-            <table>
-                <tr></tr>
-                <tr>
-                    <td style="text-align: right">Educational Plan<a href="files/edu-plan-cs.pdf">( pdf )</a></td>
-                    <td style="text-align: right">Bachelor Curriculum <a href="files/curriculum-cs.pdf">( pdf )</a></td>
-                    
-                </tr>
-                <!--<tr>-->
-                    <!--<td></td>-->
-                    <!--<td style="text-align:left">-->
-                        <!--<a href="http://ocs.iaau.edu.kg" target="_blank"><span style="font-size: 1.8em">Online Courses of IAAU</span></a>-->
-                    <!--</td>-->
-                <!--</tr>-->
-            </table>
-            <!--Majors-->
-            <div id="majors">
-                    <a id="top"></a>
-                    <h2>Courses</h2>
-                    <a href="#cs100">Introduction to Computer Science and Engineering</a> |
-                    <a href="#cs110">Engineering Computer Graphics</a> | <a href="#cs302">Computer Graphics</a> |
-                    <a href="#cs202">Data Structures</a> | <a href="#cs301">Design and Analysis of Algorithms</a> |
-                    <a href="#cs203">Database Management System</a> | <a href="#cs305">Computer Architecture</a> |
-                    <a href="#cs206">Electrotechnics and Electronics</a> | <a href="#cs307">Digital Electronics</a> |
-                    <a href="#cs208">Linear Algebra</a> | <a href="#cs311">Differential Equations</a> |
-                    <a href="#cs104">Mathematical Logic &amp Algorithm Theory</a> | <a href="#cs205">Discrete Mathematics</a> |
-                    <a href="#cs207">Scientific Programming</a> | <a href="#cs310">Microprocessors &amp Microcomputing</a> |
-                    <a href="#cs409">Network Technologies</a> | <a href="#cs306">Computer Networks &amp Telecommunication</a> |
-                    <a href="#cs201">Object Oriented Programming</a> | <a href="#cs303">Operating System Concepts</a> |
-                    <a href="#cs312">Probability and Statistics</a> | <a href="#cs402">Machine Learning</a> |
-                    <a href="#cs309">Project Management</a> | <a href="#cs413">Control Theory</a> |
-                    <a href="#cs401">Artificial Intelligence</a> | <a href="#cs406">Robotics</a> |
-                    <a href="#cs407">Image Processing</a> |
-                    <a href="#cs101">Programming Languages - 1</a> | <a href="#cs102">Programming Languages - 2</a> |
-                    <a href="#cs304">Software Engineering - 1</a> | <a href="#cs405">Software Engineering - 2</a> |
-                    <a href="#cs403">Information Security</a> | <a href="#cs404">Cryptography</a> |
-                    <a href="#cs105">Calculus - 1</a> | <a href="#cs106">Calculus - 2</a> |
-                    <a href="#cs107">Physics - 1</a> | <a href="#cs108">Physics - 2</a> |
-                    <a href="#cs103">Introduction to Web Technologies</a> | <a href="#cs204">Web Programming</a>|
-                    <a href="#cs308">Theory of Computation</a> | <a href="#cs408">Human Computer Interaction</a>|
+                <table>
+                    <tr>
+                        <td style="text-align: right">Educational Plan<a href="files/edu-plan-cs.pdf">( pdf )</a></td>
+                        <td style="text-align: right">Bachelor Curriculum <a href="files/curriculum-cs.pdf">( pdf )</a></td>
+                    </tr>
+                </table>
+
+                <!-- FIRST YEAR COURSES -->
+                <div class="course-category" id="first-year">
+                    <h2>First Year Courses</h2>
+                    <div class="course-list">
+                        <div class="course-item"><a href="#intro-eng-cs">Introduction to Engineering and Computer Science</a></div>
+                        <div class="course-item"><a href="#cs1001">CS 100.1: Introduction to Programming (Python)</a></div>
+                        <div class="course-item"><a href="#com103-python">COM 103: Programming Languages I (Python)</a></div>
+                        <div class="course-item"><a href="#com103-java">COM 103: Programming Languages I (Java)</a></div>
+                        <div class="course-item"><a href="#com103-cpp">COM 103: Programming Languages I (C++)</a></div>
+                        <div class="course-item"><a href="#com108">COM 108: Engineering Computer Graphics</a></div>
+                        <div class="course-item"><a href="#com990">COM 990: Computer Literacy</a></div>
+                        <div class="course-item"><a href="#cs103">CS 103: Calculus - 1</a></div>
+                        <div class="course-item"><a href="#cs104">CS 104: Calculus - 2</a></div>
+                        <div class="course-item"><a href="#cs105">CS 105: Physics I - Mechanics</a></div>
+                        <div class="course-item"><a href="#cs106">CS 106: Physics II - Electricity & Magnetism</a></div>
+                        <div class="course-item"><a href="#english1">CS 1st Year English Language 1 & 2</a></div>
+                        <div class="course-item"><a href="#turkish">Turkish Language COM</a></div>
+                    </div>
+                </div>
+
+                <!-- SECOND YEAR COURSES -->
+                <div class="course-category" id="second-year">
+                    <h2>Second Year Courses</h2>
+                    <div class="course-list">
+                        <div class="course-item"><a href="#com141-java">COM 141: Programming Languages II (Java)</a></div>
+                        <div class="course-item"><a href="#com141-python">COM 141: Programming Languages II (Python)</a></div>
+                        <div class="course-item"><a href="#com206">COM 206: Electrotechnics and Electronics</a></div>
+                        <div class="course-item"><a href="#com225">COM 225: Competitive Programming</a></div>
+                        <div class="course-item"><a href="#com230">COM 230: Front-end Development</a></div>
+                        <div class="course-item"><a href="#com235">COM 235: Object Oriented Programming (Java)</a></div>
+                        <div class="course-item"><a href="#cs202">CS 202: Data Structures</a></div>
+                        <div class="course-item"><a href="#cs203">CS 203: Web Technologies</a></div>
+                        <div class="course-item"><a href="#cs204">CS 204: Back-end Development with Spring</a></div>
+                        <div class="course-item"><a href="#cs205">CS 205: Database Systems</a></div>
+                        <div class="course-item"><a href="#cs206">CS 206: Digital Electronics</a></div>
+                        <div class="course-item"><a href="#elt123">ELT.123: Electronic Components and Circuits</a></div>
+                        <div class="course-item"><a href="#discrete-math">Discrete Mathematics</a></div>
+                        <div class="course-item"><a href="#probability-stats">Introduction to Probability and Statistics</a></div>
+                    </div>
+                </div>
+
+                <!-- THIRD YEAR COURSES -->
+                <div class="course-category" id="third-year">
+                    <h2>Third Year Courses</h2>
+                    <div class="course-list">
+                        <div class="course-item"><a href="#com302">COM 302: Artificial Intelligence</a></div>
+                        <div class="course-item"><a href="#com304">COM 304: Operating Systems</a></div>
+                        <div class="course-item"><a href="#com308">COM 308: Computer Architecture and OS</a></div>
+                        <div class="course-item"><a href="#com416">COM 416: Machine Learning</a></div>
+                        <div class="course-item"><a href="#com427">COM 427: Front-end Development</a></div>
+                        <div class="course-item"><a href="#com622">COM/MAT 622: OOP (Python)</a></div>
+                        <div class="course-item"><a href="#cs301">CS 301: Design and Analysis of Algorithms</a></div>
+                        <div class="course-item"><a href="#cs303-networks">CS 303: Computer Networks & Telecommunications</a></div>
+                        <div class="course-item"><a href="#cs303-mobile">CS 303: Mobile App Development</a></div>
+                        <div class="course-item"><a href="#cs308">CS 308: Computer Organization & Architecture</a></div>
+                        <div class="course-item"><a href="#software-eng">Software Engineering I</a></div>
+                        <div class="course-item"><a href="#cybersecurity">Cybersecurity</a></div>
+                        <div class="course-item"><a href="#ethical-hacking">Ethical Hacking & Penetration Testing</a></div>
+                        <div class="course-item"><a href="#psychology">Psychology (COM-20)</a></div>
+                    </div>
+                </div>
+
+                <!-- FOURTH YEAR & ELECTIVE COURSES -->
+                <div class="course-category" id="fourth-year">
+                    <h2>Fourth Year & Elective Courses</h2>
+                    <div class="course-list">
+                        <div class="course-item"><a href="#com231">COM 231: Design Thinking</a></div>
+                        <div class="course-item"><a href="#com232">COM 232: Robotics</a></div>
+                        <div class="course-item"><a href="#com233">COM 233: Data Analysis & Visualization</a></div>
+                        <div class="course-item"><a href="#com249">COM 249: Interpersonal Communication in IT</a></div>
+                        <div class="course-item"><a href="#com312">COM 312: Art and Design</a></div>
+                        <div class="course-item"><a href="#com405">COM 405: Introduction to Data Mining</a></div>
+                        <div class="course-item"><a href="#com408">COM 408: Metrology Standard & Certification</a></div>
+                        <div class="course-item"><a href="#com410">COM 410: Philosophy of Technologies</a></div>
+                        <div class="course-item"><a href="#com425">COM 425: State Examinations</a></div>
+                        <div class="course-item"><a href="#com431">COM 431: Image Processing</a></div>
+                        <div class="course-item"><a href="#com476">COM 476: Data Mining and Storage</a></div>
+                        <div class="course-item"><a href="#cs403">CS 403.1: Software Architecture & Design Patterns</a></div>
+                        <div class="course-item"><a href="#cs406">CS 406: Thesis Diploma</a></div>
+                        <div class="course-item"><a href="#cs409">CS 409: Human Computer Interaction</a></div>
+                        <div class="course-item"><a href="#math23">Math-23: Robotics</a></div>
+                        <div class="course-item"><a href="#mde402">MDE 402: Philosophy of Tech</a></div>
+                        <div class="course-item"><a href="#mde404">MDE 404: Manas Taanuu</a></div>
+                        <div class="course-item"><a href="#scientific-research">Fundamentals of Scientific Research</a></div>
+                        <div class="course-item"><a href="#vr-design">VR Design</a></div>
+                        <div class="course-item"><a href="#internships">Internships</a></div>
+                        <div class="course-item"><a href="#bootcamp">COM 000: BootCamp</a></div>
+                    </div>
+                </div>
+
+                <!-- GENERAL & SUPPORT COURSES -->
+                <div class="course-category" id="general-courses">
+                    <h2>General & Support Courses</h2>
+                    <div class="course-list">
+                        <div class="course-item"><a href="#english-current">ENGLISH LANGUAGE Present Academic year</a></div>
+                        <div class="course-item"><a href="#faculty-assessment">Faculty Assessment Simple Test</a></div>
+                        <div class="course-item"><a href="#moodle-training">Training program for Moodle managers</a></div>
+                        <div class="course-item"><a href="#turkish-beisheeva">Turkish Language COM (A. Beisheeva)</a></div>
+                    </div>
+                </div>
+
+                <!-- ALL COURSE DESCRIPTIONS IN ONE PLACE -->
+                <div id="descriptions">
+                    <h2 align="center">Course Descriptions</h2>
+
+                    <!-- First Year Course Descriptions -->
+                    <div class="course-description">
+                        <h4><a name="intro-eng-cs"></a><strong>Introduction to Engineering and Computer Science</strong></h4>
+                        <p>First part of the course introduces students to the profession, including the disciplines of chemical, civil, computer, electrical, environmental, and mechanical engineering. Prepares students for success through the integration of technical problem solving and engineering design, ethical decision-making, teamwork, and communicating to diverse audiences. Second part is aimed at students with little or no programming experience using Python programming language.</p>
+                        <div class="teacher-info">Teachers: Mohammad Tauheed Khan, Burul Shambetova</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs1001"></a><strong>CS 100.1: Introduction to Programming (Python)</strong></h4>
+                        <p>Introduces students programming language Python by means of well chosen problems, exercises and practice laboratories.</p>
+                        <div class="teacher-info">Teachers: Burul Shambetova, Bekmamat Tashmatov</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com103-python"></a><strong>COM 103: Programming Languages I (Python)</strong></h4>
+                        <p>This subject is aimed at students with little or no programming experience. It aims to provide students with an understanding of the role computation can play in solving problems and help students feel confident in their ability to write small programs that accomplish useful goals.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com103-java"></a><strong>COM 103: Programming Languages I (Java)</strong></h4>
+                        <p>Introduction to Java programming language covering basic syntax, data types, control structures, and object-oriented programming fundamentals.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com103-cpp"></a><strong>COM 103: Programming Languages I (C++)</strong></h4>
+                        <p>Introduction to C++ programming fundamentals, covering variables, control structures, functions, arrays and strings. Develops problem-solving skills and provides foundation for further programming studies.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com108"></a><strong>COM 108: Engineering Computer Graphics</strong></h4>
+                        <p>Examines internet technology and website design/development process. Covers HTML5, CSS3, and building dynamic interactive web applications using databases.</p>
+                        <div class="teacher-info">Teachers: Andrei Ermakov, Ruslan Isaev</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com990"></a><strong>COM 990: Computer Literacy</strong></h4>
+                        <p>Designed for individuals seeking to develop fundamental computer literacy skills. Covers computer operation basics, internet usage, productivity tools, email communication, document creation, and data management.</p>
+                        <div class="teacher-info">Teacher: Zhenishbek Orozakhunov</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs103"></a><strong>CS 103: Calculus - 1</strong></h4>
+                        <p>First course in calculus of one variable for computer science and engineering students. Topics include review of polynomials, trigonometric, exponential, and logarithmic functions, limits, derivatives, and applications of differential calculus to real-world problems.</p>
+                        <div class="teacher-info">Teacher: Khaled Mohammad</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs104"></a><strong>CS 104: Calculus - 2</strong></h4>
+                        <p>Second course in calculus covering integration, basic techniques for integration, applications of integration, and introduction to differential equations.</p>
+                        <div class="teacher-info">Teachers: Tahir Aslanol, Khaled Mohammad, Esen Rakhmanov</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs105"></a><strong>CS 105: Physics I - Mechanics</strong></h4>
+                        <p>Course covering Newton's Mechanics principles and applications in engineering contexts.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs106"></a><strong>CS 106: Physics II - Electricity and Magnetism</strong></h4>
+                        <p>Study of electric and magnetic phenomena, their laws and applications in devices like radios, televisions, electric motors, and computers. Covers inter-atomic and intermolecular forces electric in origin.</p>
+                        <div class="teacher-info">Teachers: Ruslan Isaev, Khaled Mohammad</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="english1"></a><strong>CS 1st Year English Language 1 & 2</strong></h4>
+                        <p>Comprehensive course designed for learners at all levels to master English. Develops strong foundational skills in reading, writing, listening, and speaking. Enhances vocabulary, grammar proficiency, pronunciation, and conversational abilities while cultivating critical thinking through literature and media.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="turkish"></a><strong>Turkish Language COM</strong></h4>
+                        <p>Introduction to Turkish language covering basic grammar, vocabulary, reading, writing, and conversational skills for computer science students.</p>
+                        <div class="teacher-info">Teacher: Zulfizar Murzaeva</div>
+                    </div>
+
+                    <!-- Second Year Course Descriptions -->
+                    <div class="course-description">
+                        <h4><a name="com141-java"></a><strong>COM 141: Programming Languages II (Java)</strong></h4>
+                        <p>This course offers a comprehensive introduction to Java, focusing on essential programming concepts and hands-on experience. Students explore Java Basics, Methods, Strings, ArrayLists, Sets, HashMaps, and File Handling with a culminating project.</p>
+                        <div class="teacher-info">Teacher: Zhenishbek Orozakhunov</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com141-python"></a><strong>COM 141: Programming Languages II (Python)</strong></h4>
+                        <p>Advanced course on Python covering OOP, packaging, virtual environments and ML/AI projects development.</p>
+                        <div class="teacher-info">Teachers: Alymbek Ergeshov, Ruslan Isaev, Mekia Shigute Gaso, Dim Shayahmetov</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com206"></a><strong>COM 206: Electrotechnics and Electronics</strong></h4>
+                        <p>Teaches direct current circuit analysis techniques and introduces basic circuit design with Arduino-based applications.</p>
+                        <div class="teacher-info">Teachers: Mohammad Tauheed Khan, Eyup Semsi Yilmaz</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com225"></a><strong>COM 225: Competitive Programming</strong></h4>
+                        <p>Introduces fundamentals of competitive programming, focusing on algorithmic thinking and coding proficiency. Covers data structures, algorithms, dynamic programming, graph theory, and mathematical concepts through coding exercises and contests.</p>
+                        <div class="teacher-info">Teacher: Zhenishbek Orozakhunov</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com230"></a><strong>COM 230: Front-end Development</strong></h4>
+                        <p>Comprehensive web development course covering HTML, CSS, JavaScript, and modern front-end frameworks for creating responsive web applications.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com235"></a><strong>COM 235: Object Oriented Programming (Java)</strong></h4>
+                        <p>Provides introduction to principles and practices of object-oriented programming. Students learn to design, implement, and test object-oriented programs using Java, covering classes, objects, inheritance, polymorphism, encapsulation and software design principles.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs202"></a><strong>CS 202: Data Structures</strong></h4>
+                        <p>Fundamental course covering various data structures including arrays, linked lists, stacks, queues, trees, graphs, and hash tables, along with their applications and algorithm analysis.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs203"></a><strong>CS 203: Web Technologies</strong></h4>
+                        <p>Examines internet technology and website design/development process. Covers HTML5, CSS3, and building dynamic interactive web applications using databases.</p>
+                        <div class="teacher-info">Teacher: Ruslan Isaev</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs204"></a><strong>CS 204: Back-end Development with Spring Framework</strong></h4>
+                        <p>Introduces Java Spring framework for enterprise solutions. Covers dependency injection, Gradle, databases with Spring and Hibernate, web applications with Spring MVC, Spring Security, JDBC, web forms, and aspect-oriented programming.</p>
+                        <div class="teacher-info">Teacher: Zhavlon Khamidov</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs205"></a><strong>CS 205: Database Systems</strong></h4>
+                        <p>Introductory database course covering database systems role in information systems, database development in SDLC, data modeling concepts (E-R and Class diagrams), SQL queries, DBMS (MS SQL Server), and data integrity issues.</p>
+                        <div class="teacher-info">Teachers: Nargiza Zhumalieva, Zhavlon Khamidov</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs206"></a><strong>CS 206: Digital Electronics</strong></h4>
+                        <p>Fundamental course introducing digital circuits, logic gates, flip-flops, counters, and registers. Helps understand how digital signals are processed and controlled.</p>
+                        <div class="teacher-info">Teacher: Mohammad Tauheed Khan</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="elt123"></a><strong>ELT.123: Electronic Components and Circuits</strong></h4>
+                        <p>Introduction to DC theory, analysis and design of electric circuits covering voltage, current, power, energy, resistance, capacitance, inductance, Kirchhoff's laws, node analysis. Includes Arduino-based circuit design, programming and applications.</p>
+                        <div class="teacher-info">Teacher: Mohammad Tauheed Khan</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="discrete-math"></a><strong>Discrete Mathematics</strong></h4>
+                        <p>Fundamental mathematical course covering discrete structures including sets, relations, functions, logic, combinatorics, graph theory, and algebraic structures essential for computer science applications.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="probability-stats"></a><strong>Introduction to Probability and Statistics</strong></h4>
+                        <p>Course covering fundamental concepts of probability theory, statistical analysis, data interpretation, and their applications in computer science and engineering fields.</p>
+                    </div>
+
+                    <!-- Third Year Course Descriptions -->
+                    <div class="course-description">
+                        <h4><a name="com302"></a><strong>COM 302: Artificial Intelligence</strong></h4>
+                        <p>Covers fundamentals of AI including intelligent agents, problem-solving, knowledge representation, reasoning, and machine learning concepts. Students develop AI applications in Machine Learning, Neural Networks, Deep Learning, and Reinforcement Learning using Python or MATLAB.</p>
+                        <div class="teacher-info">Teachers: Arslan Khan, Selcuk Cankurt</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com304"></a><strong>COM 304: Operating Systems</strong></h4>
+                        <p>Introductory course covering basic concepts of operating systems, resource management (memory, peripherals, CPU scheduling), system call interface, process creation and synchronization, application communication, memory hierarchy, virtual memory, and file management.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com308"></a><strong>COM 308: Computer Architecture and Operating Systems</strong></h4>
+                        <p>Comprehensive course covering both computer architecture principles and operating system concepts including processor design, memory hierarchy, and system software interaction.</p>
+                        <div class="teacher-info">Teacher: Talgat Mendekov</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com416"></a><strong>COM 416: Machine Learning</strong></h4>
+                        <p>Covers main models and algorithms for regression, classification, clustering, and probabilistic classification. Focuses on data handling, visualization, and model development in domain-based problem-solving using Python.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com427"></a><strong>COM 427: Front-end Development</strong></h4>
+                        <p>Covers web development basics with HTML, CSS, JavaScript programming, jQuery JavaScript library, and Bootstrap framework. Includes projects ranging from simple HTML pages to complete JavaScript-based Chrome extensions.</p>
+                        <div class="teacher-info">Teacher: Ruslan Isaev</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com622"></a><strong>COM/MAT 622: Object Oriented Programming (Python)</strong></h4>
+                        <p>Introduces principles and practices of OOP using Python through lectures, hands-on coding, and capstone project. Covers classes, objects, inheritance, polymorphism, encapsulation, GUI development with PyQt, unit tests, and SOLID principles.</p>
+                        <div class="teacher-info">Teachers: Erustan Erkebulanov, Zhenishbek Orozakhunov</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs301"></a><strong>CS 301: Design and Analysis of Algorithms</strong></h4>
+                        <p>Advanced course covering algorithm design techniques, complexity analysis, and efficiency optimization for various computational problems.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs303-networks"></a><strong>CS 303: Computer Networks & Telecommunications</strong></h4>
+                        <p>Covers telecommunications networks, data exchange between computers, network links (cable and wireless media), network nodes, and applications like WWW, shared resources, email, and instant messaging.</p>
+                        <div class="teacher-info">Teachers: Mohammad Imtiyaz Gulbarga, Aziret Ramankulov</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs303-mobile"></a><strong>CS 303: Mobile App Development</strong></h4>
+                        <p>Examines principles of mobile application design and development on Android platform. Covers memory management, UI design, input methods, data handling, network techniques, GPS, motion sensing, and project deployment.</p>
+                        <div class="teacher-info">Teachers: Nurmuhammet Abdullayev, Ruslan Isaev</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs308"></a><strong>CS 308: Computer Organization & Architecture</strong></h4>
+                        <p>Provides broader understanding of computer systems, organization and architecture. Covers essential computer working principles, logical and arithmetic operations, and fundamental building blocks.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="software-eng"></a><strong>Software Engineering I</strong></h4>
+                        <p>Fundamental course covering software development methodologies, requirements analysis, system design, implementation, testing, and maintenance processes in software engineering.</p>
+                        <div class="teacher-info">Teachers: Mekia Shigute Gaso, Remudin Reshid Mekuria, Nargiza Zhumalieva</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cybersecurity"></a><strong>Cybersecurity</strong></h4>
+                        <p>Comprehensive course covering principles of information security, network security, cryptography, threat analysis, and defense mechanisms to protect computer systems and networks from cyber threats.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="ethical-hacking"></a><strong>Ethical Hacking & Penetration Testing</strong></h4>
+                        <p>Hands-on course teaching ethical hacking techniques, vulnerability assessment, penetration testing methodologies, and security auditing to identify and address system vulnerabilities.</p>
+                        <div class="teacher-info">Teachers: Mohammad Imtiyaz Gulbarga, Akzhol Suborov, Sabina Sulaimanova</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="psychology"></a><strong>Psychology (COM-20)</strong></h4>
+                        <p>Introduction to psychological principles and their application in human-computer interaction, user experience design, and understanding user behavior in technological contexts.</p>
+                        <div class="teacher-info">Teacher: Fatma Hena</div>
+                    </div>
+
+                    <!-- Fourth Year & Elective Course Descriptions -->
+                    <div class="course-description">
+                        <h4><a name="com231"></a><strong>COM 231: Design Thinking for Product Solutions</strong></h4>
+                        <p>Course focusing on human-centered design approach for developing innovative technology products and solutions through empathy, ideation, prototyping, and testing.</p>
+                        <div class="teacher-info">Teacher: Andrei Ermakov</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com232"></a><strong>COM 232: Robotics</strong></h4>
+                        <p>Introduction to robotics principles including robot design, control systems, sensors, actuators, and programming of robotic systems for various applications.</p>
+                        <div class="teacher-info">Teacher: Artur Kutlugildin</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com233"></a><strong>COM 233: Data Analysis and Visualization</strong></h4>
+                        <p>Course covering data analysis techniques, statistical methods, and visualization tools for interpreting and presenting complex data in meaningful ways.</p>
+                        <div class="teacher-info">Teachers: Mekia Shigute Gaso, Remudin Reshid Mekuria</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com249"></a><strong>COM 249: Interpersonal Communication in IT</strong></h4>
+                        <p>Helps IT students build interpersonal communication skills for diverse teams, conflict management, and technical concept communication. Develops assertiveness, influence, and conflict resolution skills for IT environments.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com312"></a><strong>COM 312: Art and Design</strong></h4>
+                        <p>Prepares students to think critically and execute visual solutions across print, digital platforms and motion graphics. Explores design process from industry professionals and graduates students with well-rounded portfolios.</p>
+                        <div class="teacher-info">Teacher: Andrei Ermakov</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com405"></a><strong>COM 405: Introduction to Data Mining</strong></h4>
+                        <p>Fundamental course covering data mining techniques, pattern discovery, association rule mining, classification, and clustering algorithms for extracting knowledge from large datasets.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com408"></a><strong>COM 408: Metrology Standard & Certification</strong></h4>
+                        <p>Teaches analysis of measurement systems for process stability and capability. Covers continuous measurement systems characterization, statistical control, capability assessment, and discrete measurement analysis using Python.</p>
+                        <div class="teacher-info">Teachers: Ruslan Isaev, Artur Kutlugildin</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com410"></a><strong>COM 410: Philosophy of Technologies</strong></h4>
+                        <p>Examination of philosophical questions raised by technology, including ethical implications of technological development, impact on society, and the relationship between humans and technology.</p>
+                        <div class="teacher-info">Teacher: Arslan Khan</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com425"></a><strong>COM 425: State Examinations</strong></h4>
+                        <p>Comprehensive state examination designed to assess learning outcomes in key Computer Science disciplines including Programming languages, Web programming (Backend development with Spring Boot) and Software Engineering.</p>
+                        <div class="teacher-info">Teachers: Ermek Doszhanov, Ruslan Isaev, Zhavlon Khamidov, Nurlan Shaidullaev, Burul Shambetova, Dim Shayahmetov</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com431"></a><strong>COM 431: Image Processing</strong></h4>
+                        <p>Course covering digital image processing techniques including image enhancement, restoration, compression, segmentation, and pattern recognition algorithms.</p>
+                        <div class="teacher-info">Teachers: Mohammad Tauheed Khan, Eyup Semsi Yilmaz</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="com476"></a><strong>COM 476: Data Mining and Storage</strong></h4>
+                        <p>Advanced course covering data mining concepts and techniques along with modern data storage solutions, big data technologies, and distributed computing frameworks.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs403"></a><strong>CS 403.1: Software Architecture & Design Patterns</strong></h4>
+                        <p>Introduction to architecture and design of complete software systems using components and patterns. Covers architectural principles, design documentation, and relationships between abstraction levels.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs406"></a><strong>CS 406: Thesis Diploma</strong></h4>
+                        <p>Final year thesis project under faculty supervision, requiring students to demonstrate comprehensive knowledge and research skills in computer science.</p>
+                        <div class="teacher-info">Supervisors: Andrei Ermakov, Gulzada Esenalieva, Mohammad Imtiyaz Gulbarga, Ruslan Isaev, Arslan Khan, Mohammad Tauheed Khan, Azamat Kibekbaev, Burul Shambetova</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="cs409"></a><strong>CS 409: Human Computer Interaction</strong></h4>
+                        <p>The study of human-computer interaction enables system architects to design useful, efficient, and enjoyable computer interfaces. This course teaches the theory, design procedure, and programming practices behind effective human interaction with computers, with particular focus on smart phones and tablets. Covers interaction design, implementation, evaluation, usability engineering, prototyping, and novel interfaces beyond traditional graphical user interfaces.</p>
+                        <div class="teacher-info">Teacher: Burul Shambetova</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="math23"></a><strong>Math-23: Robotics</strong></h4>
+                        <p>Mathematical foundations for robotics including kinematics, dynamics, control theory, and motion planning algorithms.</p>
+                        <div class="teacher-info">Teacher: Curt Schurgers</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="mde402"></a><strong>MDE 402: Philosophy of Tech</strong></h4>
+                        <p>Examination of philosophical questions raised by technology, including ethical implications of technological development, impact on society, and the relationship between humans and technology.</p>
+                        <div class="teacher-info">Teacher: Arslan Khan</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="mde404"></a><strong>MDE 404: Manas Taanuu</strong></h4>
+                        <p>Online course focusing on the study of Manas epic, Kyrgyz cultural heritage, and its significance in contemporary society.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="scientific-research"></a><strong>Fundamentals of Scientific Research</strong></h4>
+                        <p>Course designed to foster and evaluate students' skills necessary for conducting and reporting research. Covers research idea development, literature review, research questions formulation, data collection, ethical guidelines, and research proposal writing with emphasis on meeting deadlines and oral communication of findings.</p>
+                        <div class="teacher-info">Teacher: Burul Shambetova</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="vr-design"></a><strong>VR Design</strong></h4>
+                        <p>Comprehensive course in virtual reality design covering 3D environment creation, user interaction design, immersive experience development, and VR application implementation using modern tools and technologies.</p>
+                        <div class="teacher-info">Teachers: Ruslan Isaev, Ruslan Migranov</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="internships"></a><strong>Internships</strong></h4>
+                        <p>Three main internship sections: Educational internship, Industrial internship, and Pre-qualificational internship. Requirements vary by study year, providing practical experience in real-world computing environments.</p>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="bootcamp"></a><strong>COM 000: BootCamp</strong></h4>
+                        <p>Intensive training program covering various computer science topics through hands-on projects and accelerated learning sessions.</p>
+                    </div>
+
+                    <!-- General & Support Course Descriptions -->
+                    <div class="course-description">
+                        <h4><a name="english-current"></a><strong>ENGLISH LANGUAGE Present Academic year</strong></h4>
+                        <p>Current academic year English language course focusing on continuous improvement of language skills relevant to computer science professionals, including technical writing and presentation skills.</p>
+                        <div class="teacher-info">Teacher: Murray James Eldred</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="faculty-assessment"></a><strong>Faculty Assessment Simple Test</strong></h4>
+                        <p>Assessment test designed to evaluate student progress and faculty teaching effectiveness across computer science program, ensuring quality education standards.</p>
+                        <div class="teacher-info">Teacher: Ruslan Isaev</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="moodle-training"></a><strong>Training program for Moodle managers</strong></h4>
+                        <p>Specialized training program for managing Moodle learning management system, covering course creation, user management, assessment tools, and platform administration for effective online education delivery.</p>
+                        <div class="teacher-info">Teachers: Ruslan Isaev, Nurlan Shaidullaev</div>
+                    </div>
+
+                    <div class="course-description">
+                        <h4><a name="turkish-beisheeva"></a><strong>Turkish Language COM (A. Beisheeva)</strong></h4>
+                        <p>Advanced Turkish language course focusing on technical vocabulary and communication skills specific to computer science context, including professional terminology and business communication.</p>
+                        <div class="teacher-info">Teacher: Aigul Beisheeva</div>
+                    </div>
+
+                </div>
             </div>
-
-            <!-- Descriptions -->
-            <div id="descriptions">
-                <h2 align="center">Course Descriptions</h2><br>
-
-                <h4><a name="cs100"></a><strong>CS 100: Introduction to Computer Science and Engineering</strong></h4>
-                <p>First part of the course introduces students to the profession, including the disciplines of chemical,
-                    civil, computer, electrical, environmental, and mechanical engineering. Prepares students for success
-                    through the integration of the following important skills: technical problem solving and engineering
-                    design, ethical decision-making, teamwork, and communicating to diverse audiences. Second part is
-                    aimed at students with little or no programming experience. It aims to provide students with an
-                    understanding of the role computation can play in solving problems. It also aims to help students,
-                    regardless of their major, to feel justifiably confident of their ability to write small programs
-                    that allow them to accomplish useful goals. The class will use the Python programming language.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h4><a name="cs312"></a><strong>CS 312: Probability and statistics</strong></h4>
-                <p> Probability and statistics are two related but separate academic disciplines. Statistical analysis
-                    often uses probability distributions, and the two topics are often studied together. However,
-                    probability theory contains much that is of mostly of mathematical interest and not directly
-                    relevant to statistics. Moreover, many topics in statistics are independent of probability theory.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h4><a name="cs107"></a><strong>CS 107: Physics - 1 (Mechanics)</strong></h4>
-                <p>Introductory physics course, geared towards engineering majors. Equilibrium and motion of particles
-                    in one and two dimensions in the framework of Newtonian mechanics, force laws (including gravity),
-                    energy, momentum, rotational motion, conservation laws, and fluids. Examples will be drawn from
-                    astronomy, biology, sports, and current events. Prerequisites: Mathematics</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h4><a name="cs108"></a><strong>CS 108: Physics - 2 (Electricity and Magnetism)</strong></h4>
-                <p>Physics course geared toward engineering majors. Electricity and Magnetism should
-                    provide instruction in each of the following five content areas: electrostatics; conductors,
-                    capacitors and dielectrics; electric circuits; Electric & magnetic fields; and electromagnetism,
-                    DC and AC circuitry.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="la"></a>Linear Algebra</h3>
-                <p> Linear algebra is the branch of mathematics concerning finite or countably infinite dimensional
-                    vector spaces, as well as linear mappings between such spaces. Such an investigation is initially
-                    motivated by a system of linear equations in several unknowns. Such equations are  naturally
-                    represented using the formalism of matrices and vectors.[1 Linear algebra is central to both pure
-                    and applied mathematics. For instance, abstract algebra arises by relaxing the axioms of a vector
-                    space, leading to a number of generalizations.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h4><a name="cs105"></a><strong>CS 105: Calculus - 1</strong></h4>
-                <p>This is a first course in the calculus of one variable intended for computer science, industrial
-                    engineering, industrial electronics and applied mathematics students. It is open to others who are
-                    qualified and desire a more rigorous mathematics course at the core level.
-                    Topics include a brief review of polynomials, trigonometric, exponential, and logarithmic functions,
-                    followed by discussion of limits, derivatives, and applications of differential calculus to
-                    real-world problem areas. An introduction to integration concludes the course.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h4><a name="cs106"></a><strong>CS 106: Calculus - 2</strong></h4>
-                <p>This is a second course in the calculus of one variable intended for computer science, industrial
-                    engineering, industrial electronics and applied mathematics students. It is open to others who are
-                    qualified and desire a more rigorous mathematics course at the core level.
-                    Topics include an overview of integration, basic techniques for integration, a variety of
-                    applications of integration, and an introduction to (systems of) differential equations.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="algo"></a>Algorithm and programming</h3>
-                <p>In mathematics and computer science, an algorithm  is a step-by-step procedure for calculations. Algorithms are used for calculation, data processing, and automated reasoning. More precisely, an algorithm is an effective method expressed as a finite list[1] of well-defined instructions[2] for calculating a function.[3] Starting from an initial state and initial input (perhaps empty),[4] the instructions describe a computation that, when executed, will proceed through a finite [5] number of well-defined successive states, eventually producing &quot;output&quot;[6] and terminating at a final ending state. The transition from one state to the next is not necessarily deterministic; some algorithms, known as randomized algorithms, incorporate random input.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="mathlog"></a>Mathematical logic  and algorithm theory</h3>
-                <p> Mathematical logic  and algorithm theory(also known as symbolic logic) is a subfield of mathematics with close connections to the foundations of mathematics, theoretical computer science and philosophical logic.[1] The field includes both the mathematical study of logic and the applications of formal logic to other areas of mathematics. The unifying themes in mathematical logic include the study of the expressive power of formal systems and the deductive power of formal proof systems. Mathematical logic is often divided into the fields of set theory, model theory, recursion theory, and proof theory. These areas share basic results on logic, particularly first-order logic, and definability. In computer science (particularly in the ACM Classification) mathematical logic encompasses additional topics not detailed in this article; see logic in computer science for those.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="discr"></a>Discrete Structure</h3>
-                <p>Discrete mathematics is mathematics that deals with discrete objects. Discrete objects are those which are separated from (not connected to/distinct from) each other. Integers (aka whole numbers), rational numbers (ones that can be expressed as the quotient of two integers), automobiles, houses, people etc. are all discrete objects. On the other hand real numbers which include rational as well as irrational numbers are not discrete. As you know between any two different real numbers there is another real number different from either of them. In this course we will be concerned with objects such as integers, propositions, sets, relations and functions, which are all discrete. We are going to learn concepts associated with them, their properties, and relationships among them among others.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="ds"></a>Data Structure</h3>
-                <p>In computer science, a data structure is a particular way of storing and organizing data in a computer so that it can be used efficiently.[1][2]Different kinds of data structures are suited to different kinds of applications, and some are highly specialized to specific tasks. For example, B-trees are particularly well-suited for implementation of databases, while compilerimplementations usually use hash tables to look up identifiers.Data structures provide a means to manage huge amounts of data efficiently, such as large databases and internet indexing services. Usually, efficient data structures are a key to designing efficient algorithms. Some formal design methods and programming languages emphasize data structures, rather than algorithms, as the key organizing factor in software design.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="pl"></a>Programming Languages</h3>
-                <p>A programming language is an artificial language designed to communicate instructions to a machine, particularly a computer. Programming languages can be used to create programs that control the behavior of a machine and/or to express algorithms precisely.	The earliest programming languages predate the invention of the computer, and were used to direct the behavior of machines such as Jacquard looms and player pianos[citation needed]. Thousands of different programming languages have been created, mainly in the computer field, with  many more being created every year. Most programming languages describe computation in an imperative style, i.e., as a sequence of commands, although some languages, such as those that support functional programming or logic programming, use alternative forms of description.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="ee"></a>Electrotechnics and Electronics</h3>
-                <p>The aim of the course is to teach students to evaluate the condition of electrical equipment and its adaptation potential as well as reveal the factors of operation improving, be able to choose the equipment professionally in order to increase productivity of foodstuff made of  plants. The course consists of 3 interrelated modules representing the structural-functional communication of electric circuits theory, electromagnetic devices, fundamentals of electronics and electric measuring. The successive and systematic study of the course will provide students with knowledge of electrotechnics fundamentals, their connection with the principles of electrical equipment and electronic equipment building. The course should also teach students the essence of electromagnetic processes in an electric circuit, their dependence on energy sources and receivers as well as their significance for the efficient use of electrical equipment. This course is basic for all courses using knowledge on electrical equipment.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="eg"></a>Engineering Computer Graphics</h3>
-                <p>Ideally suited for designers, broadcasters, architects, engineers as well as anyone who would like to learn to create 2-dimensional and 3-dimensional study models with ease and sophistication, this course delivers a well rounded introduction to the power of Google’s SketchUp. Students are enabled to draw using a familiar pencil and paper paradigm in a software context. Google SketchUp makes 3D modeling easy enough for anyone to learn, and fast enough to use under real-world time constraints. SketchUp will allow students to demonstrate to clients what a new building will look like, recreate and fly through the scene of an accident, or visualize a theatrical set before it’s built. At the conclusion of this course, students will be comfortable creating, animating, and displaying 3D environments at a sophisticated level.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="de"></a>Differential Equation</h3>
-                <p>A differential equation is a mathematical equation for an unknown function of one or several variables that relates the values of the function itself and its derivatives of various orders. Differential equations play a prominent role in engineering, physics, economics, and other disciplines. Differential equations arise in many areas of science and technology, specifically whenever adeterministic relation involving some continuously	varying quantities (modeled by functions) and their rates of change in space and/or time (expressed as derivatives) is known or postulated. This is illustrated in classical mechanics, where the motion of a body is described by its position and velocity as the time value varies. Newton's laws allow one (given the position, velocity, acceleration and various forces acting on the body) to express these variables dynamically as a differential equation for the unknown position of the body as a function of time. In some cases, this differential equation (called an equation of motion) may be solved explicitly.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-
-                <h3><a name="theory"></a>Theory of Computation</h3>
-                <p>Theory of Computation is theoretical computer science and mathematics, the theory of computation is the branch that deals with whether and how efficiently problems can be solved on a model of computation, using an algorithm. The field is divided into three major branches: automata theory,computability theory and computational complexity theory.[1] In order to perform a rigorous study of computation, computer scientists work with a mathematical abstraction of computers called a model of computation. There are several models in use, but the most commonly examined is the Turing machine. Computer scientists study the Turing machine because it is simple to formulate, can be analyzed and used to prove results, and because it represents what many consider the most powerful possible &quot;reasonable&quot; model of computation (see Church–Turing thesis). It might seem that the potentially infinite memory capacity is an unrealizable attribute, but any decidable problem solved by a Turing machine will always require only a finite amount of memory. So in principle, any problem that can be solved (decided) by a Turing machine can be solved by a computer that has a bounded amount of memory.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="comar"></a>Computer Architecture</h3>
-                <p>Computer science and engineering, computer architecture refers to specification of the relationship between different hardware components of	a computer system.[1] It may also refer to the practical art of defining the structure and relationship of the subcomponents of a computer. As	in the architecture of buildings, computer architecture can comprise many levels of information. The highest level of the definition conveys the concepts implement. Whereas in building architecture this over-view is normally visual, computer architecture is primarily logical, 	positing a conceptual system that serves a particular purpose. In both instances (building and computer), many levels of detail are required to completely specify a given implementation, and some of these details are often implied as common practice. For example, at a high level, computer architecture is concerned with how the central processing unit (CPU) acts and how it accessescomputer memory. Some currently (2011) fashionable computer architectures include cluster computing and Non-Uniform Memory Access.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="softe"></a>Software Engineering</h3>
-                <p>Software engineering (SE) is the application of a systematic, disciplined, quantifiable approach to the design, development, operation, and maintenance of software, and the study of these approaches; that is, the application of engineering to software.[1] [2] [3] The termsoftware engineering first appeared in the 1968 NATO Software Engineering Conference, and was meant to provoke thought regarding the perceived &quot;software crisis&quot; at the time. Software development, a much used and more generic term, does not necessarily subsume the engineering paradigm. The field's future looks bright according to Money Magazine and Salary.com, which rated Software Engineer as the best job in the United States in 2006.[6]In 2012, software engineering was again ranked as the best job in the United States, this time by CareerCast.com.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="micro"></a>Microprocessor</h3>
-                <p>A microprocessor incorporates the functions of a computer's central processing unit (CPU) on a single integrated circuit (IC),[1] or at most a few integrated circuits.[2] It is a multipurpose,programmable device that accepts digital data as input, processes it according to instructions stored in its memory, and provides results as output. It is an example of sequential digital logic, as it has internal memory. Microprocessors operate on numbers and symbols represented in the binary numeral system. The advent of low-cost computers on integrated circuits has transformed modern society. General-purpose microprocessors in personal computers are used for computation, text editing, multimedia display, and communication over the Internet. Many more microprocessors are part of embedded systems, providing digital control of a myriad of objects from appliances to automobiles to cellular phones and industrial process control.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="webt"></a>Web Technologies</h3>
-                <p>HTML/XHTML Over the years Web Technologies have continued to develop so that now, virtually any type of audio-visual media can be 'carried' via the Internet.Most of these technologies however, have effectively been 'bolted-on' to the original web page construction 	language; Hyper Text Markup Language (HTML). You'll notice most web addresses begin with 'http://' which means 'Hyper Text Transfer Protocol', and end with .HTM or .HTML. (In case you're wondering, the 'HTM' extension is for backward-compatibility with older 'Windows' DOS computers, which had a limit of only 3 letters).</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-
-                <h3><a name="como"></a>Computer Organization</h3>
-                <p>Computer Organization refers to the level of abstraction above the digital logic level, but below the operating system level. At this level,	the major components are functional units or subsystems that correspond to specific pieces of hardware built from the lower level building blocks described in the previous module. A closely related term, computer architecture, emphasizes the engineering decisions and tradeoffs that must be made in order to produce a &quot;good&quot; design. The computer architect answers questions like... How many registers should there be? What machine instructions should there be? How should the cache be organized? What hardware support should there be for virtual memory?</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="anos"></a>Operating System Concepts</h3>
-                <p>An operating system (OS) is a collection of software that manages computer hardware resources and provides common services for computer programs. The operating system is a vital component of the system software in a computer system. Application programs require an operating system to function. Time-sharing operating systems schedule tasks for efficient use of the system and may also include accounting for cost allocation of processor time, mass storage, printing, and other resources. For hardware functions such as input and output and memory allocation, the operating system acts as an intermediary between programs and the computer hardware,[1][2] although the application code is usually executed directly by the hardware and will frequently make asystem call to an OS function or be interrupted by it. Operating systems can be found on almost any device that contains a computer—from cellular phones and video game consolesto supercomputers and web servers.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="datab"></a>Database Management System (DBMS)</h3>
-                <p>A database is an organized collection of data, today typically in digital form. The data are typically organized to model relevant aspects of reality (for example, the availability of rooms in hotels), in a way that supports processes requiring this information (for example, finding a hotel with vacancies). The term database is correctly applied to the data and their supporting data structures, and not to the database management system(DBMS). The database data collection with DBMS is called a database system. The term database system implies that the	data is managed to some level of quality (measured in terms of accuracy, availability, usability, and resilience) and this in turn often 	implies the use of a general-purpose database management system (DBMS).[1] A general-purpose DBMS is typically a complex software system that meets many usage requirements to properly maintain its databases which are often large and complex. The utilization of databases is now so 		 		widespread that virtually every technology and product relies on databases and DBMSs for its development and commercialization, or even may  have DBMS software embedded in it. Organizations and companies, from small to large, depend heavily on databases for their operations.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="comtele"></a>Computer Networking and Telecommunications</h3>
-                <p>The telecommunications industry includes wireless technology, computer networks, telephone systems, television, and radio. Research 	facilities, manufacturers, and network providers fuel this fast-paced field. The application of electrical engineering and physics has revolutionized business and personal communications by increasing transmission rates, reliability, and range. Elements of human communication including data, voice, images and movies are now transmitted in seconds around the globe. In addition, advances in technology have significantly decreased the size of communication devices.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="robot"></a>Robotics</h3>
-                <p>Robotics is the branch of technology that deals with the design, construction, operation and application of robots [1] and computer systems for their control, sensory feedback, and information processing. These technologies deal with automated machines that can take the place of humans, in hazardous or manufacturing processes, or simply just resemble humans. Many of today's robots are inspired by nature contributing to the field of bio-inspired robotics. The concept and creation of machines that could operate autonomously dates back to classical times, but research into the functionality and potential uses of robots did not grow substantially until the 20th century.[2] Throughout history, robotics has been often seen to mimic human behavior, and often manage tasks in a similar fashion. Today, robotics is a rapidly growing field, as we continue to research, design, and build new robots that serve various practical purposes, whether domestically, commercially, or militarily. 		 		Many robots do jobs that are hazardous to people such as defusing bombs, exploring shipwrecks, and mines.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="oop"></a>Object Oriented Programming</h3>
-                <p>Object-oriented programming (OOP) is a programming paradigm using &quot;objects&quot; –i.e.instances of a class consisting of data fields and methods together with their interactions – to design applications and computer programs. Programming techniques may include features such as data abstraction, encapsulation, messaging, modularity, polymorphism, andinheritance. Many modern programming languages now support OOP, at least as an option.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="vo"></a>Human–computer interaction</h3>
-                <p>Human–computer interaction (HCI) involves the study, planning, and design of the interaction between people (users) and computers. It is often regarded as the intersection of computer science, behavioral sciences, design and several other fields of study. The term was popularized by Card, Moran, and Newell in their seminal 1983 book, The Psychology of Human-Computer Interaction, although the authors first used the term in 1980, and the first known use was in 1975. The term connotes that, unlike other tools with only limited uses (such as a hammer, useful for driving nails, but not much else), a computer has many affordances for use and this takes place in an open-ended dialog between the user and the computer.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="ai"></a>Artificial Intelligence (AI)</h3>
-                <p>Artificial intelligence (AI) is the intelligence of machines and the branch of computer science
-                    that aims to create it. AI textbooks define the field as &quot;the study and design of intelligent
-                    agents where an intelligent agent is a system that perceives its environment and takes
-                    actions that maximize its chances of success. John McCarthy, who coined the term in 1955,
-                    defines it as the science and engineering of making intelligent machines.&quot; AI research
-                    is highly technical and specialized, deeply divided into subfields that often fail to communicate
-                    with each other.[5] Some of the division is due to social and cultural factors: subfields have
-                    grown up around particular institutions and the work of individual researchers. AI research is
-                    also divided by several technical issues. There are subfields which are focused on the solution
-                    of specific problems, on one of several possible approaches, on the use of widely differing tools
-                    and towards the accomplishment of particular applications. The central problems of AI include
-                    such traits as reasoning, knowledge, planning, learning, communication, perception and the
-                    ability to move and manipulate objects.[6] General intelligence (or strong AI   ) is
-                    still among the field's long term goals.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="network"></a>Network Technologies</h3>
-                <p>Network technology refers to the hardware and software used to connect a group of two or more computers. In scope, it can encompass setting up peer-to-peer connection, through local area networks (lans) and even includes an understanding of how the internet and the world wide web function.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="is"></a>Information Security</h3>
-                <p>Information security means protecting information and information systems from unauthorized access, use, disclosure, disruption, modification, perusal, inspection, recording or destruction.[1] The terms information security, computer security and information assurance are frequently used interchangeably. These fields are interrelated often and share the common goals of protecting the confidentiality, integrity and availability of information; however, there are some subtle differences between them. These differences lie primarily in the approach to the subject, the methodologies used, and the areas of concentration. Information security is concerned with the confidentiality, integrity and availability of data regardless of the form the data may take: electronic, print, or other forms. Computer security can focus on ensuring the availability and correct operation of a computer system without concern for the information stored or processed by the computer. Information assurance focuses on the reasons for assurance that information is protected, and is thus reasoning about information security.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="life"></a>Life Savety</h3>
-                <p>The publication Life Safety Code, known as NFPA 101, is a consensus standard widely adopted in the United States. It is administered, trademarked, copyrighted, and published by the National Fire Protection Association and, like many NFPA documents, is systematically revised on a three year cycle. Despite its title, the standard is not a legal code, is not published as an instrument of law, and has no statutory  authority in its own right. However, it is deliberately crafted with language suitable for mandatory application to facilitate adoption into law by those empowered to do so.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-                <h3><a name="metro"></a>Meteorology and Standardization</h3>
-                <p>METEOROLOGY AND STANDARDIZATION GOST (Russian: ГОСТ) refers to a set of technical standards maintained by the Euro-Asian Council for Standardization, Meteorology and Certification (EASC), a regional standards organization operating under the auspices of the Commonwealth of Independent States (CIS). All sorts of regulated standards are included, with examples ranging from charting rules for design documentation to	recipes and nutritional facts of Soviet-era brand names (which have now become generic, but may only be sold under the label if the technical standard is followed, or renamed if they are reformulated). GOST standards were originally developed by the government of the Soviet Union as part of its national standardization strategy. The word GOST (Russian: ГОСТ) is an acronym forgosudarstvennyy standart, which means state standard. The history of national standards in the USSR can be traced back to 1925, when a  government agency, later named Gosstandart, was established and put in charge of writing, updating, publishing, and disseminating the standards. After World War II, the national standardization program went through a major transformation.[citation needed] The first GOST standard, GOST 1State Standardization System, was published in 1968. The following countries have adopted GOST standards in addition to their own, nationally developed standards: Russia, Belarus, Ukraine,Moldova, Kazakhstan, Azerbaijan, Armenia, Kyrgyzstan, Uzbekistan, Tajikistan, Georgia, and Turkmenistan.</p>
-                <div class="top">[<a href="#top">Top Page</a>]</div>
-
-            </div>
-            </div>
-    </div>
+        </div>
         <!-- END OF CONTENT -->
 
         <!-- FOOTER -->
         <div id="footer-wrap">
-
             <div id="footer" class="container_12">
-
-                <p class="f-left">&copy; 2017 CS Dept. AIU</p>
-
+                <p class="f-left">&copy; 2024 CS Dept. AIU</p>
             </div>
-
         </div>
         <!-- END OF FOOTER -->
     </div>
 
-	<!-- Scripts -->
-	<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+    <!-- Scripts -->
+    <script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="../js/to_top.js"></script>
-    <div class="to_top" style="display: block;">
-        <div class="to_top_panel">
-            <div class="to_top_button" title="Наверх">
-                <span class="arrow">
-                    ↑
-                </span>
-                <span class="label">
-                    наверх
-                </span>
-            </div>
-        </div>
-    </div>
+    
     <!-- For IE 6,7 -->
-	<script type="text/javascript">
-		sfHover = function() {
-			var sfEls = document.getElementById("nav").getElementsByTagName("LI");
-			for (var i=0; i<sfEls.length; i++) {
-				sfEls[i].onmouseover=function() {
-					this.className+=" sfhover";
-				};
-				sfEls[i].onmouseout=function() {
-					this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
-				};
-			}
-		};
-		if (window.attachEvent) window.attachEvent("onload", sfHover);
-	</script>
-	
-	<!--Google-->
-	<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script type="text/javascript">
+        sfHover = function() {
+            var sfEls = document.getElementById("nav").getElementsByTagName("LI");
+            for (var i=0; i<sfEls.length; i++) {
+                sfEls[i].onmouseover=function() {
+                    this.className+=" sfhover";
+                };
+                sfEls[i].onmouseout=function() {
+                    this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+                };
+            }
+        };
+        if (window.attachEvent) window.attachEvent("onload", sfHover);
+    </script>
+    
+    <!--Google-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-46202546-1', 'iaau.edu.kg');
-		  ga('send', 'pageview');
-	</script>
-	
+        ga('create', 'UA-46202546-1', 'iaau.edu.kg');
+        ga('send', 'pageview');
+    </script>
 </body>
-
 </html>
