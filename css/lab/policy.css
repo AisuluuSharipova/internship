@@ -1,0 +1,116 @@
+ #content {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+            padding: 20px 0;
+        }
+        
+        .center-text {
+            font-size: 1.8em;
+            color: #38558e;
+            text-align: center;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #33b5e5;
+            padding-bottom: 10px;
+            text-shadow: 1px 1px 1px #fff;
+        }
+        
+        h5 {
+            font-size: 1em;
+            color: #666;
+            text-align: right;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        h2 {
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            color: #38558e;
+            background: linear-gradient(to right, #e8f4fc, #f8f9fa);
+            padding: 10px 15px;
+            border-left: 4px solid #33b5e5;
+            border-radius: 3px;
+        }
+        
+        h4 {
+            font-size: 1.1em;
+            color: #38558e;
+            margin: 15px 0 8px 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        li {
+            margin-bottom: 15px;
+        }
+        
+        .download-link {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        
+        .download-link a {
+            color: #38558e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .download-link a:hover {
+            color: #33b5e5;
+            text-decoration: underline;
+        }
+        
+        .warning-text {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .nested-list {
+            background: #f8f9fa;
+            border: 1px solid #e8f4fc;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        
+        .red-text {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            #content {
+                font-size: 13px;
+                padding: 15px 10px;
+            }
+            
+            .center-text {
+                font-size: 1.5em;
+            }
+            
+            h2 {
+                font-size: 1.2em;
+            }
+            
+            h4 {
+                font-size: 1em;
+            }
+            
+            .nested-list {
+                padding: 10px;
+            }
+        }
