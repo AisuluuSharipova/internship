@@ -1,0 +1,239 @@
+ #content {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+            padding: 20px 0;
+        }
+        
+        #content h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #38558e;
+            text-align: center;
+            border-bottom: 2px solid #33b5e5;
+            padding-bottom: 10px;
+        }
+        
+        .hero-text {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 1.1em;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin: 20px 0 30px 0;
+        }
+        
+        .tag {
+            background: #e8f4fc;
+            color: #38558e;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Sections */
+        .section {
+            margin: 40px 0;
+        }
+        
+        .section h2 {
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            color: #38558e;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        /* Research Areas Grid */
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .area-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .area-card h3 {
+            font-size: 1.2em;
+            color: #38558e;
+            margin-bottom: 10px;
+        }
+        
+        .area-card p {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+        
+        .area-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        
+        .area-tag {
+            background: #f8f9fa;
+            color: #38558e;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        /* Labs Section */
+        .labs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .lab-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .lab-card h3 {
+            font-size: 1.2em;
+            color: #38558e;
+            margin-bottom: 10px;
+        }
+        
+        .lab-card p {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .project-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 20px;
+        }
+        
+        .project-category {
+            color: #33b5e5;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .project-card h3 {
+            font-size: 1.2em;
+            color: #38558e;
+            margin-bottom: 10px;
+        }
+        
+        .project-card p {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background: #38558e;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        
+        .btn:hover {
+            background: #33b5e5;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: #38558e;
+            border: 1px solid #38558e;
+        }
+        
+        .btn-outline:hover {
+            background: #38558e;
+            color: white;
+        }
+
+        /* Opportunities */
+        .opportunities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .opportunity-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 20px;
+        }
+        
+        .dark-card {
+            background: #2c3e50;
+            color: white;
+            border: 1px solid #34495e;
+        }
+        
+        .dark-card h3,
+        .dark-card p {
+            color: white;
+        }
+        
+        .dark-card .area-tag {
+            background: rgba(255,255,255,0.2);
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            #content {
+                padding: 15px 10px;
+            }
+            
+            #content h1 {
+                font-size: 1.6em;
+            }
+            
+            .areas-grid,
+            .labs-grid,
+            .projects-grid,
+            .opportunities-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tags {
+                justify-content: flex-start;
+            }
+        }

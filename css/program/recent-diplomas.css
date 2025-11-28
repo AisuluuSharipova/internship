@@ -1,0 +1,104 @@
+
+    /* Recent Diplomas Page Styles */
+    #content {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #333;
+        padding: 20px 0;
+    }
+    
+    #content h2 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+        color: #38558e;
+        text-align: center;
+        border-bottom: 2px solid #33b5e5;
+        padding-bottom: 10px;
+    }
+    
+    .project {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        transition: background-color 0.2s;
+    }
+    
+    .project:hover {
+        background-color: #f8f9fa;
+    }
+    
+    .number {
+        width: 40px;
+        font-size: 13px;
+        color: #666;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .title {
+        flex: 1;
+        font-size: 14px;
+        font-weight: bold;
+        color: #38558e;
+        text-align: left;
+        padding: 0 15px;
+    }
+    
+    .author {
+        width: 250px;
+        font-size: 13px;
+        color: #666;
+        text-align: left;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        #content {
+            font-size: 13px;
+            padding: 15px 10px;
+        }
+        
+        #content h2 {
+            font-size: 1.5em;
+        }
+        
+        .project {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 12px 8px;
+        }
+        
+        .number {
+            width: auto;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        
+        .title {
+            padding: 0;
+            margin-bottom: 5px;
+            width: 100%;
+        }
+        
+        .author {
+            width: 100%;
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .project {
+            padding: 10px 5px;
+        }
+        
+        .title {
+            font-size: 13px;
+        }
+        
+        .author {
+            font-size: 11px;
+        }
+    }
