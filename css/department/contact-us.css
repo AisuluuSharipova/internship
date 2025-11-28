@@ -1,0 +1,113 @@
+#content {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+            padding: 20px 0;
+        }
+        
+        #content h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #38558e;
+            text-align: left;
+            border-bottom: 2px solid #33b5e5;
+            padding-bottom: 10px;
+        }
+        
+        #content h4 {
+            font-size: 1.3em;
+            margin: 25px 0 15px 0;
+            color: #38558e;
+            background: linear-gradient(to right, #e8f4fc, #f8f9fa);
+            padding: 8px 12px;
+            border-left: 4px solid #33b5e5;
+            border-radius: 3px;
+        }
+        
+        #content p {
+            margin-bottom: 15px;
+            text-align: left;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        #content strong {
+            color: #38558e;
+            font-weight: bold;
+        }
+        
+        .contact-image {
+            float: right;
+            margin: 0 0 20px 20px;
+            border: 1px solid #d3d3d3;
+            border-radius: 4px;
+            padding: 5px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .contact-image img {
+            display: block;
+            border-radius: 2px;
+        }
+        
+        .divider {
+            border: none;
+            height: 2px;
+            background: #d3d3d3;
+            margin: 20px 0;
+            width: 100%;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            border: 1px solid #e8f4fc;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .email-section {
+            background: #fff;
+            border: 1px solid #d3d3d3;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Clearfix for floated elements */
+        #content:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            #content {
+                font-size: 13px;
+                padding: 15px 10px;
+            }
+            
+            #content h1 {
+                font-size: 1.5em;
+            }
+            
+            #content h4 {
+                font-size: 1.1em;
+            }
+            
+            .contact-image {
+                float: none;
+                display: block;
+                margin: 15px auto;
+                text-align: center;
+            }
+            
+            .contact-info,
+            .email-section {
+                padding: 15px;
+            }
+        }

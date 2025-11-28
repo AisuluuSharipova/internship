@@ -1,0 +1,93 @@
+#content {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+            padding: 20px 0;
+        }
+        
+        .page-heading {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #38558e;
+            text-align: center;
+            border-bottom: 2px solid #33b5e5;
+            padding-bottom: 10px;
+        }
+        
+        #content p {
+            margin-bottom: 15px;
+            text-align: justify;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .image {
+            background: #fff;
+            border: 1px solid #d3d3d3;
+            border-radius: 4px;
+            padding: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 10px 20px;
+        }
+        
+        .image img {
+            display: block;
+            border-radius: 2px;
+        }
+        
+        .f-left {
+            float: left;
+        }
+        
+        .f-right {
+            float: right;
+        }
+        
+        .m-right {
+            margin-right: 20px;
+        }
+        
+        .m-left {
+            margin-left: 20px;
+        }
+        
+        .m-bottom {
+            margin-bottom: 20px;
+        }
+
+        /* Clearfix for floated elements */
+        .grid_16:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            #content {
+                font-size: 13px;
+                padding: 15px 10px;
+            }
+            
+            .page-heading {
+                font-size: 1.5em;
+            }
+            
+            .image {
+                float: none;
+                display: block;
+                margin: 15px auto;
+                text-align: center;
+            }
+            
+            .f-left,
+            .f-right {
+                float: none;
+            }
+            
+            .m-right,
+            .m-left {
+                margin: 15px auto;
+            }
+        }
