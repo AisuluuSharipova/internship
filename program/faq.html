@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../css/text.css" />
     <link rel="stylesheet" type="text/css" href="../css/960.css" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
-
+    <link rel="stylesheet" type="text/css" href="../css/program/faq.css" />
 </head>
 
 <body>
@@ -93,9 +93,73 @@
         <!-- CONTENT -->
         <div id="wrap-content">
             <div id="content" class="container_16">
+                <h1>Frequently Asked Questions</h1>
+                <p class="hero-text">
+                    Quick answers about admission decisions, passing grades, exchange programs, visas, and English test options.
+                </p>
+
+                <!-- Search Box -->
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Search in FAQ..." oninput="filterFAQ(this.value)">
+                    <button class="search-clear" onclick="clearSearch()">✕</button>
+                </div>
+
+                <!-- FAQ Accordion -->
+                <div class="faq-accordion" id="faq-container">
+                    <!-- Question 1 -->
+                    <div class="faq-item">
+                        <button class="faq-question">What is the passing grade required for admission?</button>
+                        <div class="faq-answer">
+                            <p>Passing (threshold) scores for university admission are set annually by the Ministry of Education and Science of the Kyrgyz Republic. Please check the current year's official thresholds before applying.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="faq-item">
+                        <button class="faq-question">How long does it take to get an admission decision?</button>
+                        <div class="faq-answer">
+                            <p>It depends on the official procedure, but usually it takes about <strong>two weeks</strong> after submitting your documents.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="faq-item">
+                        <button class="faq-question">What is an exchange program / credit mobility?</button>
+                        <div class="faq-answer">
+                            <p>An exchange (credit mobility) is a period of study or training at a partner university for <strong>one semester</strong> or <strong>up to one academic year</strong>, with credits transferred back to AIU.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="faq-item">
+                        <button class="faq-question">Do international students need a visa to study at AIU?</button>
+                        <div class="faq-answer">
+                            <p>At Manas International Airport (Bishkek), incoming students can obtain a <strong>1-month or 3-month student visa</strong> for living and studying in the Kyrgyz Republic. The International Relations Office (IRO) assists with visa matters.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="faq-item">
+                        <button class="faq-question">Which English tests are accepted for international applicants?</button>
+                        <div class="faq-answer">
+                            <p>AIU conducts its own English test; <strong>TOEFL, IELTS, and Duolingo</strong> scores are also accepted. Program-specific requirements may apply.</p>
+                        </div>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="faq-item">
+                        <button class="faq-question">Who can apply for Erasmus+ outgoing mobility?</button>
+                        <div class="faq-answer">
+                            <p>Selection considers eligibility, academic excellence, motivation, and English proficiency. Typical criteria include <strong>GPA 87+</strong>, <strong>English C1+</strong>, and not being in the first or last semester; prior KA171 grantees are not eligible. See current calls for any updates.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="note">
+                    Sources: official AIU FAQ and IRO pages (content and availability may vary by year). If any policy changes, the most recent announcement on AIU websites prevails.
+                </div>
+            </div>
         </div>
-        </div>
-        <!-- END OF CONTENT -->
 
         <!-- FOOTER -->
         <div id="footer-wrap">
@@ -104,11 +168,62 @@
                 <p class="f-right">Ala-Too International University</p>
             </div>
         </div>
-        <!-- END OF FOOTER -->
 
     </div>
 
-	<!-- Scripts -->
+    <script>
+        // FAQ Accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', function() {
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+
+        // Search functionality
+        function filterFAQ(searchTerm) {
+            const faqItems = document.querySelectorAll('.faq-item');
+            const searchLower = searchTerm.toLowerCase();
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question').textContent.toLowerCase();
+                const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                
+                if (question.includes(searchLower) || answer.includes(searchLower)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function clearSearch() {
+            document.querySelector('.search-input').value = '';
+            filterFAQ('');
+        }
+
+        // Open first FAQ by default
+        document.addEventListener('DOMContentLoaded', function() {
+            const firstFaq = document.querySelector('.faq-item');
+            if (firstFaq) {
+                firstFaq.classList.add('active');
+            }
+        });
+    </script>
+
 	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>	
 	<script type="text/javascript" src="../js/highlight.js"></script>
 	
