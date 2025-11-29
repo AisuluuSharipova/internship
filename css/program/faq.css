@@ -6,14 +6,14 @@
             padding: 20px 0;
         }
         
-        #content h1 {
-            font-size: 2em;
-            margin-bottom: 15px;
+         #content h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
             color: #38558e;
-            text-align: center;
+            text-align: left;
             border-bottom: 2px solid #33b5e5;
             padding-bottom: 10px;
-            text-shadow: 1px 1px 1px #fff;
+            text-align: center;
         }
         
         .hero-text {
