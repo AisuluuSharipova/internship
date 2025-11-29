@@ -1,50 +1,143 @@
+/* Courses Page - Simple Style */
+#content {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    padding: 20px 0;
+}
+
+#content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #38558e;
+    text-align: center;
+}
+
+#content h2 {
+    font-size: 1.6em;
+    margin: 25px 0 15px 0;
+    color: #38558e;
+    text-align: left;
+    border-bottom: 2px solid #33b5e5;
+    padding-bottom: 8px;
+}
+
+#content h4 {
+    font-size: 1.2em;
+    margin: 15px 0 8px 0;
+    color: #2c3e50;
+}
+
+/* Quick Navigation */
+.quick-nav {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.quick-nav a {
+    color: #38558e;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.quick-nav a:hover {
+    color: #33b5e5;
+    text-decoration: underline;
+}
+
+/* Course Categories */
 .course-category {
-            background: #f8f9fa;
-            padding: 15px;
-            margin: 20px 0;
-            border-left: 4px solid #3498db;
-        }
-         #content h2 {
-            font-size: 28px;
-            margin-bottom: 25px;
-            color: #2c3e50;
-            text-align: center;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        .course-list {
-            columns: 2;
-            -webkit-columns: 2;
-            -moz-columns: 2;
-        }
-        .course-item {
-            margin-bottom: 10px;
-            break-inside: avoid;
-        }
-        .course-description {
-            background: white;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .teacher-info {
-            font-style: italic;
-            color: #666;
-            margin-top: 5px;
-        }
-        .quick-nav {
-            background: #38558e;
-            color: white;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-        }
-        .quick-nav a {
-            color: #ecf0f1;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .quick-nav a:hover {
-            color: #3498db;
-        }
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.course-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.course-item {
+    margin-bottom: 8px;
+    break-inside: avoid;
+}
+
+.course-item a {
+    color: #38558e;
+    text-decoration: none;
+}
+
+.course-item a:hover {
+    color: #33b5e5;
+    text-decoration: underline;
+}
+
+/* Course Descriptions */
+.course-description {
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border-left: 3px solid #33b5e5;
+    border: 1px solid #eee;
+}
+
+.teacher-info {
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    margin: 15px 0;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table a {
+    color: #38558e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    color: #33b5e5;
+}
+
+/* Descriptions Section */
+#descriptions {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+#descriptions h2 {
+    text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .course-list {
+        columns: 1;
+    }
+    
+    .quick-nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
