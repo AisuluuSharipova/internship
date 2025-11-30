@@ -1,7 +1,7 @@
 /* News Page Styles - Matching Developments Style */
  #content {
             font-family: Arial, sans-serif;
-            font-size: 15px;
+            font-size: 14px;
             line-height: 1.7;
             color: #333;
             padding: 20px 0;
@@ -17,7 +17,7 @@
         }
         
         #content h2 {
-            font-size: 1.8em;
+            font-size: 1.6em;
             margin-bottom: 20px;
             color: #38558e;
             text-align: center;
@@ -26,7 +26,7 @@
         }
         
         #content h3 {
-            font-size: 1.5em;
+            font-size: 1.2em;
             margin: 25px 0 15px 0;
             color: #2c3e50;
             background: linear-gradient(to right, #e8f4fc, #f8f9fa);
@@ -53,7 +53,7 @@
         }
 
         .article-title {
-            font-size: 2em;
+            font-size: 1,6em;
             margin: 0 0 15px 0;
             color: #2c3e50;
             line-height: 1.3;
@@ -63,7 +63,7 @@
 
         .article-meta {
             color: #7f8c8d;
-            font-size: 0.95em;
+            font-size: 0.9em;
             margin-bottom: 10px;
             font-weight: 500;
         }
@@ -76,19 +76,19 @@
         .article-content {
             line-height: 1.8;
             color: #444;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
         }
 
         .article-content p {
             margin-bottom: 20px;
             text-align: justify;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
         }
 
         .article-content p:first-of-type {
-            font-size: 1.1em;
+            font-size: 1em;
             color: #2c3e50;
             font-weight: 500;
             line-height: 1.8;
@@ -129,6 +129,7 @@
             padding: 15px 20px;
             border-radius: 6px;
             font-weight: 400;
+            font-size: 14p;
         }
 
         /* News Grid for Multiple Articles */
@@ -205,7 +206,7 @@
             color: #666;
             margin-bottom: 20px;
             line-height: 1.6;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 400;
         }
 
@@ -226,30 +227,16 @@
             letter-spacing: 0.3px;
         }
 
-        .tag-partnership {
-            background: #38558e;
-            color: white;
-        }
-
-        .tag-education {
-            background: #27ae60;
-            color: white;
-        }
-
+        .tag-education,
+        .tag-education,
+        .tag-partnership,
+        .tag-research,
+        .tag-event,
         .tag-industry {
-            background: #8B0000;
-            color: white;
+            background: #ecf0f1;
+            color: #2c3e50;
         }
 
-        .tag-event {
-            background: #e67e22;
-            color: white;
-        }
-
-        .tag-research {
-            background: #9b59b6;
-            color: white;
-        }
 
         /* Buttons */
         .btn {

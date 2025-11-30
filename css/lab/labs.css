@@ -1,0 +1,235 @@
+    /* Labs Page Styles - Modern Design */
+    #content {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #333;
+        padding: 20px 0;
+    }
+    
+    #content h1 {
+        font-size: 2.1em;
+        margin-bottom: 25px;
+        color: #38558e;
+        border-bottom: 2px solid #33b5e5;
+        padding-bottom: 12px;
+        font-weight: 600;
+    }
+    
+    #content h5 {
+        font-size: 1.4em;
+        margin: 30px 0 15px 0;
+        color: #2c3e50;
+        background: linear-gradient(to right, #e8f4fc, #f8f9fa);
+        padding: 12px 18px;
+        border-left: 4px solid #33b5e5;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+    
+    #content p {
+        font-size: 14px;
+        line-height: 1.7;
+        color: #444;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+    
+    /* Lab Sections */
+    .lab-section {
+        background: white;
+        border: 1px solid #d3d3d3;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 25px 0;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    
+    .lab-header {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #e9ecef;
+    }
+    
+    .lab-title {
+        font-size: 1.6em;
+        color: #2c3e50;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+    
+    .lab-content {
+        display: flex;
+        gap: 25px;
+        align-items: flex-start;
+    }
+    
+    .lab-image {
+        flex: 0 0 300px;
+    }
+    
+    .lab-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        border: 1px solid #d3d3d3;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    
+    .lab-details {
+        flex: 1;
+    }
+    
+    .lab-specs {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 6px;
+        border: 1px solid #e9ecef;
+        margin-top: 15px;
+    }
+    
+    .lab-specs strong {
+        color: #38558e;
+        font-weight: 600;
+    }
+    
+    .specs-list {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+    }
+    
+    .specs-list li {
+        padding: 5px 0;
+        border-bottom: 1px dashed #e9ecef;
+        position: relative;
+        padding-left: 20px;
+    }
+    
+    .specs-list li:before {
+        content: "•";
+        color: #38558e;
+        font-weight: bold;
+        position: absolute;
+        left: 8px;
+    }
+    
+    .specs-list li:last-child {
+        border-bottom: none;
+    }
+    
+    /* Policy Section */
+    .policy-section {
+        background: #f8f9fa;
+        border: 1px solid #d3d3d3;
+        border-radius: 8px;
+        padding: 25px;
+        margin: 30px 0;
+    }
+    
+    .policy-title {
+        font-size: 1.3em;
+        color: #38558e;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+    
+    .policy-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .policy-list li {
+        padding: 8px 0;
+        border-bottom: 1px solid #e9ecef;
+        position: relative;
+        padding-left: 25px;
+    }
+    
+    .policy-list li:before {
+        content: "✓";
+        color: #27ae60;
+        font-weight: bold;
+        position: absolute;
+        left: 8px;
+    }
+    
+    .policy-list li:last-child {
+        border-bottom: none;
+    }
+    
+    /* Links */
+    a {
+        color: #38558e;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    a:hover {
+        color: #2c3e50;
+        text-decoration: underline;
+    }
+    
+    /* Image Styling */
+    .image-left {
+        float: left;
+        margin: 0 20px 20px 0;
+        border-radius: 6px;
+        border: 1px solid #d3d3d3;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    
+    /* Clearfix for floated images */
+    .lab-section:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .lab-content {
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .lab-image {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+        
+        .lab-section {
+            padding: 20px;
+        }
+        
+        .image-left {
+            float: none;
+            margin: 0 0 20px 0;
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        #content {
+            padding: 15px 0;
+        }
+        
+        .lab-section {
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        #content h1 {
+            font-size: 1.8em;
+        }
+        
+        #content h5 {
+            font-size: 1.2em;
+            padding: 10px 15px;
+        }
+        
+        .lab-specs {
+            padding: 15px;
+        }
+    }
